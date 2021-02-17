@@ -11,7 +11,7 @@ module.exports = function createDreamTeam(x) {
     }
     let namePass = newArr.map(e=>e[0]).sort().join('')
      
-     return namePass
+     return namePass.toUpperCase()
     } else {
     return false
   }
