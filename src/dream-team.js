@@ -2,11 +2,11 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = function createDreamTeam(x) {
   if(Array.isArray(x)){
-    let y = x.map(e=>e.split(' ').join(''))
+
     let newArr = []
-    for(let i = 0; i < y.length; i++){
-      if(typeof y[i] ===  'string'){
-        newArr.push(y[i])
+    for(let i = 0; i < x.length; i++){
+      if(typeof x[i] ===  'string'){
+        newArr.push(x[i].split(' ').join(''))
       } 
     }
     let namePass = newArr.map(e=>e[0]).sort().join('')
