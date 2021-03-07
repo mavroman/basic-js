@@ -9,7 +9,7 @@ module.exports = function getSeason(date) {
   if(date instanceof Date){
     if(Object.prototype.toString.call(date) !== '[object Date]') throw new Error('Error');
   
-    let season = ['winter', 'winter', 'spring', 'spring', 'spring', 'summer', 'summer', 'summer', 'fall', 'fall', 'fall',           'winter']
+    let season = ['winter', 'winter', 'spring', 'spring', 'spring', 'summer', 'summer', 'summer', 'fall', 'fall', 'fall', 'winter']
     return season[date.getMonth()]
   }
   throw new Error('Error');
